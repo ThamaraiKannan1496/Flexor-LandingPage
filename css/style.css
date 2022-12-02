@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
+/* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
 
@@ -12,16 +13,13 @@
 /* html {
   font-size: 10px;
 } */
-body {
-  line-height: 1;
-}
 
 /* ============Global Values end========== */
 
 /* resetted values */
 
 .container {
-  width: 1170px;
+  width: 1320px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -108,59 +106,152 @@ body {
   align-items: stretch !important;
 }
 
+
+.text-left{
+	text-align:left;
+}.text-right{
+	text-align:right;
+}.text-center{
+	text-align:center;
+}
+
 /* resetted values */
 
 /* ========Header Style starts============*/
-.header-top{
-	background-color: #000;
-    border-bottom: solid 1px #a8dadc;
-}
 .header-info{
-    background-color: #B9E0FF;
-    padding: 5px 0;
+    background-color: #39312f;   
 }
 .contact-info{
-    height: 50px;
-    background-color: #000;
+    color:#fff;
+	padding:10px 0;
+	font-family: 'Open Sans', sans-serif;
+	
 }
-.info-btn{
-    background-color: #000;
-    height: 100%;
+.contact-info i{
+	font-size:14px;
+    color:#03a9f4;
+	margin-right:4px;
+}.contact-info a{
+	display:inline-block;
+	font-size:14px;
+    color:#fff;
+	margin-right:20px;
+	cursor:pointer;
+}
+.contact-info a:hover{
+	color:#03a9f4;	
+	transition:0.5s;
+}
+.info-btn{		
+}
+.info-btn a{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	text-decoration:none;
+	color:#fff;
+	display:inline-block;
+	cursor:pointer;	
+	text-align:center;
+	background-color:#03a9f4;
+	padding: 11px 18px;
+}
+.info-btn a:hover{
+	opacity:0.9;
 }
 .nav-section{
-    padding: 5px 0;
+    padding:12px 0;
 }
-h1.logo{
-    background-color: #FFF6BF;
-    height: 50px;
+.logo a{
+	display:inline-block;
+	text-decoration:none;
+    color: #635551;
+	font-size:28px;
+	font-family: 'Poppins', sans-serif;
+	font-weight:700;
 }
-.navbar{
-    background-color: #FFF6BF;
-    height: 50px;
+.navbar .menu{
+	list-style:none;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
 }
+.menu-link a{
+	display:inline-block;
+	font-size:14px;
+	font-weight:400;
+	padding:12px 0 14px 24px;
+	text-decoration:none;
+	color:#635551;
+	font-family: 'Poppins', sans-serif;
+	cursor:pointer;
+}
+.menu-link .active{
+	color:#03a9f4;
+}
+.menu-link a:hover{
+	color:#03a9f4;
+	transition:0.4s;
+}
+
 /* ========Header Style ends============*/
 
 /* ========Banner Style starts============*/
-.banner{
-	background-color: #000;
-    border-bottom: solid 1px #a8dadc;
-}
 .banner-cont{
-    background-color: #B9E0FF;
-    padding: 50px 0 150px 0;
-	
+	background-color: #B9E0FF;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4) ) ,url("../images/hero-bg.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+	background-attachment:fixed;
+    background-size:cover;
+	width:100%;
+	height:78vh;
 }
 .banner-info{
-    height: 300px;
-	width:100%;
-    background-color: #FFF6BF;
+	font-family: 'Raleway', sans-serif;
+	color:#fff;
+	padding-top:200px;
+	height:100%;
+   	width:100%;
+ }
+.banner-info h1{
+	font-size:48px;
+	font-weight:700;
+	margin-bottom:10px;
+}
+.banner-info h2{
+	font-size:24px;
+	font-weight:500;
+	margin-bottom:50px;
+}
+.banner-btn{
+	
+}
+.banner-btn i{
+	display:inline-block;
+	font-size:16px;
+	font-weight:400;
+	/* background-color:#635551; */
+	color:#03a9f4;
+	}
+.banner-btn a{
+	display:inline-block;
+	background-color:#03a9f4;
+	padding:10px 5px;
+	color:#fff;
+	font-size:16px;
+	font-weight:400;
+	text-decoration:none;
+}
+.banner-btn a:hover{
+	
 }
 /* ========Banner Style ends============*/
 
 
 /* ========Card section Style starts============*/
 .card-section{
-	 background-color: #000;
+	 background-color: #fff;
+	 padding:30px;
 }
 .card-cont{
    
@@ -169,8 +260,7 @@ h1.logo{
     /* padding: 5px;	 */
 }
 .card-left{
-	height:350px;
-	background-color: #FFF6BF;
+	background-color: #03a9f4;
 	width:100%;
 }
 .card-right{
