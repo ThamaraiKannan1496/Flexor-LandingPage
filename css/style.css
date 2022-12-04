@@ -127,7 +127,7 @@
   font-family: "Open Sans", sans-serif;
 }
 .contact-info i {
-  color: #03a9f4;
+  color: #00bcd4;
   margin-right: 8px;
 }
 .contact-info span {
@@ -143,7 +143,7 @@
   cursor: pointer;
 }
 .contact-info a:hover {
-  color: #03a9f4;
+  color: #00bcd4;
   transition: 0.5s;
 }
 .info-btn a {
@@ -154,16 +154,16 @@
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  background-color: #03a9f4;
-  padding: 10px 25px;
+  background-color: #00bcd4;
+  padding: 10px 20px;
 }
 .info-btn a:hover {
   opacity: 0.9;
 }
 .nav-section {
-  padding: 12px 0;
+  padding: 16px 0;
 }
-.logo a {
+h1.logo > a {
   display: inline-block;
   text-decoration: none;
   color: #635551;
@@ -172,29 +172,80 @@
   font-weight: 700;
 }
 .navbar .menu {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 .menu-link a {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
-  padding: 12px 0 14px 24px;
+  padding: 8px 0 8px 30px;
   text-decoration: none;
   color: #635551;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 .menu-link .active {
-  color: #03a9f4;
+  color: #00bcd4;
 }
 .menu-link a:hover {
-  color: #03a9f4;
-  transition: 0.4s;
+  color: #00bcd4;
+  transition: 0.5s;
+}
+.drp-btn span {
+  font-size: 12px;
+  font-weight: 200;
+  color: #635551;
+}
+.drp-btn,
+.sub-btn {
+  position: relative;
+}
+.drp-item,
+.sub-item {
+  box-shadow: 0 0 3px rgb(222, 222, 222);
+  min-width: 150px;
+  background-color: #fff;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  list-style-type: none;
+  right: 0;
+  border-radius: 6px;
+  text-align: center;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 0.01s;
+}
+.sub-item {
+  top: 0;
+  right: 130px !important;
 }
 
+.drp-item li a,
+.sub-item li a {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 10px;
+  display: inline-block;
+  color: #635551;
+  text-decoration: none;
+}
+.drp-item li.drp-link a:hover,
+.sub-item li.sub-link a:hover {
+  color: #03a9f4;
+  transition: all 0.3s ease-in;
+}
+.drp-btn:hover .drp-item,
+.sub-btn:hover .sub-item {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.1s;
+}
 /* ========Header Style ends============*/
 
 /* ========Banner Style starts============*/
