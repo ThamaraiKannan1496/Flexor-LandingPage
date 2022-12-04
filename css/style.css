@@ -193,11 +193,13 @@ h1.logo > a {
   color: #00bcd4;
   transition: 0.5s;
 }
-.drp-btn span {
+.drp-btn span,
+.sub-btn span {
   font-size: 12px;
   font-weight: 200;
   color: #635551;
 }
+
 .drp-btn,
 .sub-btn {
   position: relative;
@@ -245,6 +247,9 @@ h1.logo > a {
   z-index: 1;
   transform: translateY(0%);
   transition-delay: 0s, 0s, 0.1s;
+}
+.sub-btn:hover span i {
+  transform: rotate(270deg);
 }
 /* ========Header Style ends============*/
 
