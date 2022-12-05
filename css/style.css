@@ -657,7 +657,7 @@ background-color:gray;
 	background-color:#B2B2B2;
 	border-radius:50%;
 }
-.active{
+.car-btn .active{
 	background-color:blue;
 }
 /* ======== Carasoul section Style ends============*/
