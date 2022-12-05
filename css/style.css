@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
-/* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
 
 /* ============Global Values========== */
@@ -219,7 +219,6 @@ h1.logo > a {
   transform: translateY(-2em);
   z-index: -1;
   transition: all 0.3s ease-in-out;
-
 }
 .sub-item {
   top: 0;
@@ -269,7 +268,7 @@ h1.logo > a {
 .banner-info {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  
+
   height: 100%;
   width: 100%;
 }
@@ -287,36 +286,35 @@ h1.logo > a {
   position: relative;
   display: inline-block;
 }
-.banner-btn i{
-
-padding-left:20px;
+.banner-btn i {
+  padding-left: 20px;
   position: absolute;
-  top:-16px;
-  left:0;
-  width:50px;
-  height:50px;
-  line-height:50px;
-  color:#fff;
-  background-color:#03a9f4;
-  border-radius:50%;
-  box-shadow:1px 0 5px -2px #000;
+  top: -16px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #03a9f4;
+  border-radius: 50%;
+  box-shadow: 1px 0 5px -2px #000;
 }
-.banner-btn a.bann-btn{
-  border-radius:25px;
+.banner-btn a.bann-btn {
+  border-radius: 25px;
   background-color: #584b48;
-  padding:10px 0;
+  padding: 10px 0;
   padding-left: 60px;
   padding-right: 25px;
-  font-size:16px;
-  font-weight:400;
-  color:#fff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
   text-decoration: none;
-  transition:all 0.5s ease;
-  cursor:pointer;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
-.banner-btn  a.bann-btn:hover {
-		background-color: #03a9f4;
-		color:#fff;
+.banner-btn a.bann-btn:hover {
+  background-color: #03a9f4;
+  color: #fff;
 }
 /* ========Banner Style ends============*/
 
@@ -370,7 +368,7 @@ padding-left:20px;
   color: #03a9f4;
 }
 .card-right {
-min-height:320px;
+  min-height: 320px;
   border-radius: 10px;
   padding: 40px 30px;
   background-color: rgb(255, 255, 255);
@@ -402,35 +400,155 @@ min-height:320px;
 
 /* ========image-info section Style starts============*/
 .image-info {
-  border-bottom: solid 1px #a8dadc;
-  background-color:#fff9f7;
+  background-color: #f0f8fc;
   padding: 60px 0;
 }
 .image-left {
+  background-color: #b9e0ff;
+  background-image: url("../images/about-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
   width: 100%;
-  height: 500px;
-  background-color: #fff6bf;
-  /* padding: 5px;	 */
+  height: 90vh;
+  position: relative;
 }
+/* .image-left span{ */
+/* text-align:center; */
+/* color:#000; */
+/* display:inline-block; */
+/* position:absolute; */
+/* top:40vh; */
+/* left:36vh;	 */
+/* background-color:#03a9f4; */
+/* border-radius:50%; */
+/* /* padding: 12px 10px 10px 15px; */
+/* font-size:30px; */
+/* } */
 .cont-right {
-  height: 500px;
-  width: 100%;
-  background-color: #fff6bf;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+}
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+.top-cont h4{
+	font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	color:#7f6d68;
+	font-weight:400;
+	margin-bottom:15px;
+	
+}.top-cont h2{
+	font-family: 'Raleway', sans-serif;
+	color:#554945;
+	font-weight:700;
+	font-size:28px;
+	margin-bottom:15px;
+}.top-cont p{
+	font-size:16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	color:#7f6d68;
+	margin-bottom:60px;
+	line-height:1.4;
+}
+
+.mid-content{
+display:flex;
+gap:25px;	
+margin-bottom:50px;
+}
+.mid-cont{
+	
+}
+.mid-icon{
+	padding:20px;
+	background-color:#fff;
+	border:1px solid #03a9f4;
+	border-radius:50%;
+	width:70px;
+	height:70px;
+}
+.mid-icon i{
+	display:inline-block;
+	font-size:32px;
+	color:#03a9f4;
+}
+.mid-cont h3{
+	font-size:20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:700;
+	color:#000;
+	margin-bottom:10px;
+}
+.mid-cont h3 > a {
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+.mid-cont p{
+	font-size:14px;
+	line-height:1.4;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	color:#7f6d68;
+}
+
+.mid-content:hover .mid-icon{
+	background-color:#03a9f4;
+	color:#fff;
+}
+.mid-content:hover .mid-icon i{
+	color:#fff;
+}
+.mid-cont h3 > a:hover{
+	color:#03a9f4;
 }
 
 /* ========image-info section Style ends============*/
 
 /* ========client section Style starts============*/
 .client-sec-cont {
-  border-bottom: solid 1px #a8dadc;
-  background-color: #000;
+  background-color: #fff;
   padding: 60px 0;
 }
-.client-image {
-  width: 100%;
-  height: 90px;
-  background-color: #fff6bf;
+.client-image{
+	width:120px;
+	height:auto;
 }
+.client-image img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+ filter: grayscale(1);
+}
+
+.client-image img:hover{
+	filter: grayscale(0);
+}
+.dots{
+	display:flex;
+	justify-content:center;
+	gap:10px;
+}
+.dot{
+	margin-top:14px;
+	padding:5px;
+	width:10px;
+	height:10px;
+	background-color:#fff;
+	border:1px solid #03a9f4;
+	border-radius:50%;
+}
+.dots .active{
+	background-color:#03a9f4;
+}
+
+
+
+
 /* ======== client section Style ends============*/
 
 /* ========Service section Style starts============*/
@@ -467,21 +585,82 @@ min-height:320px;
 }
 /* ======== Service Card section Style ends============*/
 
-/* ========Service card section Style starts============*/
+/* ========Carasoul section Style starts============*/
 
 .carasoul-cont {
-  width: 100%;
-  height: 500px;
-  background-color: #fff6bf;
-  padding: 100px 0;
+background-color:gray;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5) ) ,url(../images/testimonials-bg.jpg);
+	width:100%;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:center;
+	background-size:cover;
+  padding: 80px 0;
+  height:auto;
 }
 
 .carasoul-cont-details {
-  /* border-bottom: solid 1px #a8dadc; */
-  height: 300px;
-  background-color: #000;
+  
 }
-/* ======== Service Card section Style ends============*/
+.caro-img{
+	margin:0 auto;
+	width:100px;
+	margin-bottom:15px;
+	}
+.caro-img img{
+	height:auto;
+	width:100%;
+	border-radius:50%;
+	border:8px solid rgba(255,255,255,0.2);
+	}
+.caro-content{
+	text-align:center;
+}
+.caro-content h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight:700;
+	font-size:20px;
+		color:#fff;
+		line-height:1.5;
+		letter-spacing:0.75px;
+}
+.caro-content h4{font-size:16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+		color:#ddd;
+		line-height:1.15;
+		letter-spacing:0.55px;
+}
+.caro-content p{font-size:18px;font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+		font-size:18px;
+		font-style:italic;
+		color:#eee;
+		line-height:1.5;
+		letter-spacing:0.45px;
+		margin-bottom:15px;
+}
+.myQuote{
+	color:rgba(255,255,255,0.5);
+	font-size:24px;
+	padding:0 10px;
+}
+.carasoul-btn{
+	display:flex;
+	justify-content:center;
+	gap:10px;
+}
+.car-btn{
+	padding:7px;
+	width:8px;
+	height:8px;
+	background-color:#B2B2B2;
+	border-radius:50%;
+}
+.active{
+	background-color:blue;
+}
+/* ======== Carasoul section Style ends============*/
 
 /* ========portfolio section Style starts============*/
 .portfolio-sec-cont {
@@ -594,67 +773,66 @@ min-height:320px;
 /* ========footer section Style starts============*/
 .footer-content {
   background-color: #fff;
-  padding:20px;
-  }
-.copy p{
-  font-size:16px;
-  font-weight:400;
-  font-family:'Open Sans', sans ;
-  color:#635551;
-  line-height:20px;
+  padding: 20px;
 }
-.copy strong{
-	color:#000;
+.copy p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans;
+  color: #635551;
+  line-height: 20px;
 }
-.copy p:last-child{
-	font-size:14px;
-	margin-top:8px;
+.copy strong {
+  color: #000;
 }
-a.copy-link{
-	text-decoration:none;
-	pointer:cursor;
-	color:#03a9f4;
-	
+.copy p:last-child {
+  font-size: 14px;
+  margin-top: 8px;
+}
+a.copy-link {
+  text-decoration: none;
+  pointer: cursor;
+  color: #03a9f4;
 }
 .media {
-	display:flex;
-	justify-content:flex-end;
-	align-items:center;
-	gap:20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
-.media span{
-	padding: 10px 0px;
-	display:inline-block;
-	text-align:center;
-	height:40px;
-	width:40px;
-	background-color:#03a9f4;
-	color:#fff;
-	font-size:22px;	
-	font-weight:400;
-	border-radius:50%;
+.media span {
+  padding: 10px 0px;
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  background-color: #03a9f4;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 50%;
 }
-.media span:hover{
-	opacity:0.8;
-	cursor:pointer;
+.media span:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 /* ======== footer section Style ends============*/
 
 /* back to home button */
 /* .home { */
-  /* position: fixed; */
-  /* bottom: 25px; */
-  /* right: 35px; */
+/* position: fixed; */
+/* bottom: 25px; */
+/* right: 35px; */
 /* } */
 /* .home a { */
-  /* display: inline-block; */
-  /* color: white; */
-  /* background-color: blue; */
-  /* padding: 10px 25px; */
-  /* border-radius: 25px; */
-  /* text-decoration: none; */
-  /* font-family: sans-serif; */
-  /* font-size: 20px; */
+/* display: inline-block; */
+/* color: white; */
+/* background-color: blue; */
+/* padding: 10px 25px; */
+/* border-radius: 25px; */
+/* text-decoration: none; */
+/* font-family: sans-serif; */
+/* font-size: 20px; */
 /* } */
 
 /* back to home button */
