@@ -412,21 +412,28 @@ h1.logo > a {
   background-attachment: scroll;
   background-size: cover;
   width: 100%;
-  height: 90vh;
-  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* .image-left span{ */
-/* text-align:center; */
-/* color:#000; */
-/* display:inline-block; */
-/* position:absolute; */
-/* top:40vh; */
-/* left:36vh;	 */
-/* background-color:#03a9f4; */
-/* border-radius:50%; */
-/* /* padding: 12px 10px 10px 15px; */
-/* font-size:30px; */
-/* } */
+.play-btn {
+  flex: 0 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  text-align: center;
+  line-height: 80px;
+  transform: translate(-50, -50);
+}
+
+.play-btn i {
+  color: #fff;
+
+  /* display: inline-block; */
+  font-size: 40px;
+}
 .cont-right {
   display: flex;
   flex-direction: column;
@@ -688,8 +695,7 @@ h1.logo > a {
   text-transform: uppercase;
   font-family: "Open Sans", sans;
 }
-.img-btn span,
-a {
+.img-btn span {
   font-size: 12px;
   font-weight: 400;
   cursor: pointer;
@@ -1120,7 +1126,7 @@ span.advanced {
   padding: 60px 0;
 }
 .contact-head h2 {
-  padding-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 32px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -1128,11 +1134,11 @@ span.advanced {
   color: #635551;
 }
 .contact-head p {
-  padding-bottom: 20px;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #313030;
+  margin-bottom: 40px;
 }
 .contact-card {
   padding: 20px 10px;
@@ -1155,6 +1161,7 @@ span.advanced {
   font-weight: 400;
   color: #313030;
   line-height: 1.8;
+ 
 }
 .cont-icon i {
   display: inline-block;
@@ -1167,35 +1174,133 @@ span.advanced {
 .contact-farm {
   padding: 20px;
   box-shadow: 0 0 3px #c5c5c5;
+  margin-bottom: 30px;
 }
 .farm-top {
   width: 100%;
 }
-.contact-farm input {
+.contact-farm input,
+textarea {
   display: inline-block;
   width: 100%;
   padding: 10px;
   border: 1.5px solid #c5c5c5;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  outline: none;
 }
-.contact-farm input:focus {
+.farm-mid textarea {
+  width: 100%;
+  padding: 10px 0 70px 10px;
+}
+.farm-btn button {
+  padding: 8px 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #03a9f4;
+  color: #fff;
+  border: none;
+}
+.farm-btn button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: all 0.3s ease-in;
+}
+.farm-top input[type="text"]:focus {
   border: 1.5px solid #03a9f4;
 }
-.farm-top input {
+.farm-top input[type="email"]:focus {
+  border: 1.5px solid #03a9f4;
+}
+.farm-mid input[type="text"]:focus {
+  border: 1.5px solid #03a9f4;
+}
+.farm-mid textarea:focus {
+  border: 1.5px solid #03a9f4;
 }
 
 /* ======== Contact section Style ends============*/
 
 /* ========footer link section Style starts============*/
+.foot-link-section {
+}
 .foot-link-sec-cont {
-  background-color: #d6e4e5;
+  background-color: #f0f8fc;
   padding: 60px 0;
 }
-.fcard {
-  height: 250px;
-  background-color: #fff6bf;
+
+.footlink li {
+  list-style-type: none;
+  list-style-position: inside;
 }
+.footlink h4 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 15px;
+}
+.footlink li a {
+  color: #656262;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0 7px 0;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+.footlink li::before {
+  content: ">";
+  padding-right: 10px;
+  color: #03a9f4;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.address-link h3 {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 0 0 15px 0;
+  color: #313030;
+  font-family: "Raleway", sans-serif;
+}
+.address-link p {
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 400;
+  color: #656262;
+  font-family: "Raleway", sans-serif;
+}
+
+.subscribe-link p {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #656262;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 30px;
+}
+
+.subs-form {
+  position: relative;
+  padding: 3px 0;
+  border-radius: 25px;
+  background-color: #656262;
+}
+
+.subs-form input[type="email"] {
+  padding: 10px 0 10px 0px;
+  margin-left: 14px;
+}
+.subs-form input[type="submit"] {
+}
+.footlink li a:hover {
+  color: #03a9f4;
+  transition: 0.3s;
+}
+
 /* ======== footer link section Style ends============*/
 
 /* ========footer section Style starts============*/
