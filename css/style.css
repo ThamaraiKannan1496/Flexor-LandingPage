@@ -1161,7 +1161,6 @@ span.advanced {
   font-weight: 400;
   color: #313030;
   line-height: 1.8;
- 
 }
 .cont-icon i {
   display: inline-block;
@@ -1224,8 +1223,6 @@ textarea {
 /* ======== Contact section Style ends============*/
 
 /* ========footer link section Style starts============*/
-.foot-link-section {
-}
 .foot-link-sec-cont {
   background-color: #f0f8fc;
   padding: 60px 0;
@@ -1284,18 +1281,35 @@ textarea {
 }
 
 .subs-form {
-  position: relative;
-  padding: 3px 0;
+  /* padding: 3px 0; */
   border-radius: 25px;
-  background-color: #656262;
+  box-shadow: 0 0 5px #c5c5c5;
+  position: relative;
 }
 
-.subs-form input[type="email"] {
-  padding: 10px 0 10px 0px;
-  margin-left: 14px;
+.subs-form input {
+  padding: 14px 10px;
+  width: 70%;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
 }
-.subs-form input[type="submit"] {
+.subs-form button {
+  position: absolute;
+  top: 23px;
+  right: -61px;
+  transform: translate(-50%, -50%);
+  padding: 12px 25px;
+  border: none;
+  background-color: #03a9f4;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 25px;
 }
+
 .footlink li a:hover {
   color: #03a9f4;
   transition: 0.3s;
