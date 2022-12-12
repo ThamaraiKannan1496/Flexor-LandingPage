@@ -294,12 +294,12 @@ h1.logo > a {
   height: 100%;
   width: 100%;
 }
-.banner-info h1 {
+.banner-info h2 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.banner-info h2 {
+.banner-info h3 {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 50px;
