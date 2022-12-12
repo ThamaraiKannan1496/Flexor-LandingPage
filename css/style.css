@@ -1324,11 +1324,17 @@ textarea {
   cursor: pointer;
 }
 .footlink li::before {
-  content: ">";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
   padding-right: 10px;
   color: #03a9f4;
-  font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .address-link h3 {
