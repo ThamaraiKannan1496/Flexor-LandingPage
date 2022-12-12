@@ -1169,6 +1169,11 @@ span.advanced {
   color: #000;
   cursor: pointer;
 }
+
+.left-faq a:hover {
+  color: #03a9f4;
+  transition: all 0.2s ease-in;
+}
 /* ======== faq section Style ends============*/
 
 /* ========Contact section Style starts============*/
