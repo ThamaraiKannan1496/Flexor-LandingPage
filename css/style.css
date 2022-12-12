@@ -599,15 +599,28 @@ h1.logo > a {
   top: -36px;
   left: 43%;
   background-color: #03a9f4;
-  border: 1px solid #03a9f4;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  flex: 0 0 auto;
   font-size: 32px;
   color: #fff;
   text-align: center;
   line-height: 2;
+  z-index: 1;
+}
+.ser-icon::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #03a9f4;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  z-index: -1;
+  transition: all 0.2s ease;
 }
 
 .service-card h3 {
@@ -623,7 +636,6 @@ h1.logo > a {
   text-decoration: none;
   cursor: pointer;
   color: #000;
-  /* color:#03a9f4; */
 }
 .service-card p {
   text-align: center;
@@ -632,11 +644,18 @@ h1.logo > a {
   color: #313030;
   font-family: "Open Sans", sans;
 }
+
+.service-card:hover .ser-icon::after {
+  transform: scale(1.1);
+  background-color: #fff;
+}
 .service-card:hover .ser-icon {
   color: #03a9f4;
-  border: 1px solid #03a9f4;
-  /* transition:all 1s ease-in; */
-  background-color: #fff;
+}
+
+.service-card:hover h3 a {
+  color: #03a9f4;
+  transition: all 0.1s ease-in;
 }
 /* ======== Service section Style ends============*/
 
@@ -701,6 +720,7 @@ h1.logo > a {
   color: #656262;
 }
 .img-btn a {
+  font-size: 12px;
   text-decoration: none;
   color: #656262;
   text-transform: uppercase;
