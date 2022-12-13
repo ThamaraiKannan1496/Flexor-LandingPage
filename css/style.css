@@ -944,7 +944,8 @@ h1.logo > a {
   font-size: 22px;
   font-weight: 900;
 }
-.image-card-icon i:hover {
+.image-card-icon a:hover {
+  cursor: pointer;
   color: #03a9f4;
 }
 
@@ -1038,6 +1039,7 @@ h1.logo > a {
   transition-delay: all 5s ease-in-out;
 }
 .team-card-icons i:hover {
+  cursor: pointer;
   color: #03a9f4;
   transition: all 0.2s ease-in;
 }
