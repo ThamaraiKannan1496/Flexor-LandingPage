@@ -1281,6 +1281,8 @@ textarea {
   margin-bottom: 10px;
   transition: 0.3s;
   outline: none;
+  resize:vertical;
+  overflow:auto;
 }
 .farm-mid textarea {
   width: 100%;
