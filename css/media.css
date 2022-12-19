@@ -10,4 +10,88 @@
   .row > * {
     width: 100%;
   }
+  /* ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+  } */
+  .info-btn {
+    display: none;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: center;
+  }
+  .banner-cont {
+    height: 80vh;
+  }
+  .banner-info h2 {
+    font-size: 24px;
+  }
+  .banner-info h3 {
+    font-size: 18px;
+  }
+  .card-ryt {
+    margin-top: 20px;
+  }
+  .card-section {
+    margin-bottom: -65px;
+  }
+
+  .image-left {
+    height: 500px;
+  }
+  .img-info-p {
+    padding: 0 !important;
+  }
+  .cont-right {
+    padding: 30px 0px 0px 0px !important;
+  }
+
+  .cli-sm {
+    width: 50%;
+  }
+  .cli-sm:nth-child(even) {
+    display: none;
+  }
+  .service-sec-cont {
+    padding-bottom: 0;
+  }
+  .mb-20 {
+    margin-bottom: 25px;
+  }
+  .contact-card {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .cont-icon {
+    margin-left: 15px;
+  }
+  .cont-farm,
+  .contact-sec-cont {
+    padding-bottom: 10px;
+  }
+  .faq-sec-cont {
+    padding: 40px 0px;
+  }
+  .faq-list-item {
+    padding: 0;
+  }
+  /* .left-faq-icon {
+    font-size: 14px;
+  } */
+
+  .footlink h4 {
+    margin-top: 15px;
+  }
+  .copy p {
+    text-align: center;
+  }
+  .media {
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
 }
