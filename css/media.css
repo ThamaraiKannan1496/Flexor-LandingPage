@@ -1,0 +1,13 @@
+@media all and (min-width: 576px) {
+  .d-block {
+    display: block !important;
+  }
+}
+@media all and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .row > * {
+    width: 100%;
+  }
+}
