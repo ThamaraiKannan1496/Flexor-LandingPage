@@ -615,14 +615,16 @@ h1.logo > a {
 }
 .ser-icon {
   position: absolute;
-  top: -36px;
-  left: 43%;
+  top: -60px;
+  left: 51%;
   background-color: #03a9f4;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   font-size: 32px;
   color: #fff;
+  flex: 0 0 auto;
+  transform: translate(-50%, 50%);
   text-align: center;
   line-height: 2;
   z-index: 1;
@@ -1196,7 +1198,7 @@ span.advanced {
 .left-faq-icon {
   display: inline-block;
   opacity: 0.6;
-  font-size: 30px;
+  font-size: 28px;
   flex: 0 0 auto;
   color: #03a9f4;
   vertical-align: middle;
@@ -1204,13 +1206,16 @@ span.advanced {
 .right-faq {
   display: inline-block;
   color: #000;
-  cursor: pointer;
+  font-size: 18px;
+  flex: 0 0 auto;
+  vertical-align: middle;
 }
 
 .left-faq a:hover {
   color: #03a9f4;
   transition: all 0.2s ease-in;
 }
+
 /* ======== faq section Style ends============*/
 
 /* ========Contact section Style starts============*/
