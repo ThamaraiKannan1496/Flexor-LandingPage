@@ -10,7 +10,11 @@
   .row > * {
     width: 100%;
   }
-  .contact-info {
+  .header-info .row > .col-lg-6 {
+    width: 75%;
+  }
+  .header-info .row > .col-lg-3 {
+    width: 25%;
   }
   /* banner */
   .banner-cont {
@@ -37,7 +41,6 @@
   }
   .service-card-sec-cont .row > .col-lg-6 {
     width: 50%;
-    height: 100%;
   }
   .portfolio-sec-cont .row > .col-lg-4 {
     width: 50%;

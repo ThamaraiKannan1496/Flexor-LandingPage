@@ -1173,49 +1173,56 @@ span.advanced {
   font-weight: 400;
   margin-bottom: 25px;
 }
-.faq-list-item {
+.faq-list-item li {
+  list-style-type: none;
+  width: 100%;
+}
+.faq-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px;
   background-color: #fff;
-  font-size: 16px;
+  color: #000;
+  padding: 20px 15px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   margin-bottom: 18px;
 }
-.faq-list-item i {
+/* .faq-list-item i {
   display: inline-block;
-}
-.left-faq a {
+} */
+/* .left-faq a {
   display: inline-block;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #343a40;
   padding: 20px 5px;
-}
-
-.left-faq-icon {
+} */
+.left-faq span,
+.right-faq span {
   display: inline-block;
+}
+.left-faq i {
+  padding-right: 5px;
   opacity: 0.6;
   font-size: 28px;
   flex: 0 0 auto;
   color: #03a9f4;
   vertical-align: middle;
 }
-.right-faq {
-  display: inline-block;
+.right-faq i {
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   flex: 0 0 auto;
-  vertical-align: middle;
 }
 
-.left-faq a:hover {
+.faq-item:hover {
   color: #03a9f4;
   transition: all 0.2s ease-in;
 }
-
+.faq-item:hover .right-faq i {
+  color: #03a9f4;
+  transition: all 0.2s ease-in;
+}
 /* ======== faq section Style ends============*/
 
 /* ========Contact section Style starts============*/
