@@ -5,6 +5,7 @@
 /* font-family: 'Raleway', sans-serif; */
 
 /* ============Global Values========== */
+
 * {
   padding: 0;
   margin: 0;
@@ -226,7 +227,7 @@ h1.logo > a {
 }
 .drp-item,
 .sub-item {
-  box-shadow: 0 0 3px rgb(222, 222, 222);
+  box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
   min-width: 150px;
   background-color: #fff;
   position: absolute;
@@ -401,7 +402,7 @@ h1.logo > a {
   border-radius: 10px;
   padding: 40px 30px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 2px rgb(172, 172, 172);
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 .card-rt-icon span {
   display: block;
@@ -611,7 +612,7 @@ h1.logo > a {
   min-height: 200px;
   margin-bottom: 85px;
   position: relative;
-  box-shadow: 0 0 1.5px #fff;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 .ser-icon {
   position: absolute;
@@ -693,6 +694,7 @@ h1.logo > a {
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0 0 2px #fff;
+  transition: all 3s ease-in-out;
 }
 .i1 {
   background-image: url("../images/values-1.jpg");
@@ -990,8 +992,10 @@ h1.logo > a {
   position: relative;
   box-shadow: 0 0 8px #c5c5c5;
   margin-bottom: 50px;
+  border-radius: 5px;
 }
 .team-card img {
+  border-radius: 5px 5px 0 0;
   width: 100%;
   object-fit: cover;
 }
@@ -1019,6 +1023,7 @@ h1.logo > a {
   background-color: #fff;
   text-align: center;
   padding: 15px 0;
+  border-radius: 5px;
 }
 .team-card-head h3 {
   font-size: 18px;
@@ -1070,7 +1075,7 @@ h1.logo > a {
 }
 .pricing-card {
   width: 100%;
-  box-shadow: 0 0 5px #c5c5c5;
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 12%);
   border-radius: 6px;
   position: relative;
   overflow: hidden;
@@ -1137,6 +1142,7 @@ span.advanced {
   background-color: #f8f8f8;
 }
 .price-card-btn a {
+  box-shadow: 0 3px 7px rgb(3 169 244 / 40%);
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -1249,7 +1255,7 @@ span.advanced {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  box-shadow: 0 0 15px -7px #aeaeae;
+  box-shadow: 0 0 30px rgb(214 215 216 / 60%);
   margin-bottom: 25px;
 }
 .cont-card-info h3 {
@@ -1276,7 +1282,7 @@ span.advanced {
 }
 .contact-farm {
   padding: 20px;
-  box-shadow: 0 0 15px -7px #aeaeae;
+  box-shadow: 0 0 30px rgb(214 215 216 / 60%);
   margin-bottom: 30px;
 }
 .farm-top {
@@ -1290,7 +1296,7 @@ textarea {
   border: 1.5px solid #cfcfcf;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   transition: 0.3s;
   outline: none;
   resize: vertical;
@@ -1452,13 +1458,16 @@ textarea {
 .copy p:last-child {
   font-size: 14px;
 }
-.copy-links {
-  margin-top: 8px;
-}
+
 a.copy-link {
   text-decoration: none;
   cursor: pointer;
   color: #03a9f4;
+  text-transform: uppercase;
+  font-weight: 700;
+  word-spacing: 4px;
+  letter-spacing: 1.7px;
+  margin-left: 10px;
 }
 .media {
   display: flex;
@@ -1476,6 +1485,10 @@ a.copy-link {
   color: #fff;
   text-align: center;
   line-height: 2;
+}
+.media span a {
+  color: #fff;
+  text-decoration: none;
 }
 .media span:hover {
   opacity: 0.8;
