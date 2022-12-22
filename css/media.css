@@ -43,6 +43,15 @@
   .card-section {
     margin-bottom: -75px;
   }
+  .contact-card {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    /* padding: 10px 10px; */
+  }
+  .cont-icon {
+    margin-left: 5px;
+  }
 }
 /* Medium */
 @media (min-width: 767px) and (max-width: 992px) {
