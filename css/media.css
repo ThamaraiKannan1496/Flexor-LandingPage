@@ -54,7 +54,7 @@
   }
 }
 /* Medium */
-@media (min-width: 767px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .container {
     width: 90%;
   }
@@ -135,7 +135,7 @@
   }
 }
 /* Small */
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .container {
     width: 90%;
   }
